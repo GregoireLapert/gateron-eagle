@@ -55,10 +55,10 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>Cherry MX Keyswitch PCB footprints</description>
+<description>Gateron Keyswitch PCB footprints</description>
 <packages>
-<package name="CHERRY-MX">
-<description>Cherry MX Keyswitch footprint</description>
+<package name="GATERON">
+<description>Gateron Keyswitch footprint</description>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
@@ -69,8 +69,8 @@
 <pad name="P$4" x="5.08" y="0" drill="1.7144" diameter="1.9304"/>
 <hole x="0" y="0" drill="4.0004"/>
 </package>
-<package name="CHERRY-MX-LED">
-<description>Cherry MX series keyswitch footprint with additional holes for LED</description>
+<package name="GATERON-LED">
+<description>Gateron Keyswitch footprint with additional holes for LED</description>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
@@ -80,11 +80,11 @@
 <pad name="P$3" x="-5.08" y="0" drill="1.7144" diameter="1.9304"/>
 <pad name="P$4" x="5.08" y="0" drill="1.7144" diameter="1.9304"/>
 <hole x="0" y="0" drill="4.0004"/>
-<pad name="LED1" x="-1.27" y="-3.81" drill="1.016" diameter="1.6764"/>
-<pad name="LED2" x="1.27" y="-3.81" drill="1.016" diameter="1.6764"/>
+<pad name="LED1" x="-1.27" y="-5.08" drill="1.016" diameter="1.6764"/>
+<pad name="LED2" x="1.27" y="-5.08" drill="1.016" diameter="1.6764"/>
 </package>
-<package name="CHERRY-MX-DIODE">
-<description>Cherry MX Series Keyswitch footprint with holes for diode or wire bridge</description>
+<package name="GATERON-DIODE">
+<description>Gateron Keyswitch footprint with holes for diode or wire bridge</description>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
@@ -99,9 +99,9 @@
 </package>
 </packages>
 <symbols>
-<symbol name="CHERRY-MX">
-<description>Basic part for Cherry MX series keyswitch</description>
-<text x="-6.096" y="5.842" size="1.4224" layer="95">CHERRY-MX</text>
+<symbol name="GATERON">
+<description>Basic part for Gateron keyswitch</description>
+<text x="-6.096" y="5.842" size="1.4224" layer="95">GATERON</text>
 <pin name="PIN-1" x="-10.16" y="2.54" length="middle"/>
 <pin name="PIN-2" x="-10.16" y="-2.54" length="middle"/>
 <text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
@@ -110,9 +110,9 @@
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 </symbol>
-<symbol name="CHERRY-MX-LED">
-<description>Schematic part for Cherry MX series keyswitch with additional pins for LED</description>
-<text x="-5.334" y="5.588" size="1.4224" layer="95">CHERRY-MX-LED</text>
+<symbol name="GATERON-LED">
+<description>Schematic part for Gateron keyswitch with additional pins for LED</description>
+<text x="-5.334" y="5.588" size="1.4224" layer="95">GATERON-LED</text>
 <pin name="SW1" x="-10.16" y="2.54" length="middle"/>
 <pin name="SW2" x="-10.16" y="-2.54" length="middle"/>
 <text x="-5.334" y="-7.366" size="1.778" layer="95">&gt;NAME</text>
@@ -123,9 +123,9 @@
 <pin name="LED1" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="LED2" x="17.78" y="-2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="CHERRY-MX-DIODE">
-<description>Schematic part for Cherry MX series keyswitch with additional pins for diode bridge.</description>
-<text x="-5.334" y="5.588" size="1.4224" layer="95">CHERRY-MX-DIODE</text>
+<symbol name="GATERON-DIODE">
+<description>Schematic part for Gateron keyswitch with additional pins for diode bridge.</description>
+<text x="-5.334" y="5.588" size="1.4224" layer="95">GATERON-DIODE</text>
 <pin name="SW1" x="-10.16" y="2.54" length="middle"/>
 <pin name="SW2" x="-10.16" y="-2.54" length="middle"/>
 <text x="-5.334" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
@@ -138,13 +138,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CHERRY-MX">
-<description>Cherry MX series keyswitch</description>
+<deviceset name="GATERON">
+<description>Gateron keyswitch</description>
 <gates>
-<gate name="G$1" symbol="CHERRY-MX" x="-2.54" y="-25.4"/>
+<gate name="G$1" symbol="GATERON" x="-2.54" y="-25.4"/>
 </gates>
 <devices>
-<device name="" package="CHERRY-MX">
+<device name="" package="GATERON">
 <connects>
 <connect gate="G$1" pin="PIN-1" pad="SW1"/>
 <connect gate="G$1" pin="PIN-2" pad="SW2"/>
@@ -155,13 +155,13 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CHERRY-MX-LED">
-<description>Cherry MX series keyswitch with LED</description>
+<deviceset name="GATERON-LED">
+<description>Gateron keyswitch with LED</description>
 <gates>
-<gate name="G$1" symbol="CHERRY-MX-LED" x="-2.54" y="0"/>
+<gate name="G$1" symbol="GATERON-LED" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="CHERRY-MX-LED">
+<device name="" package="GATERON-LED">
 <connects>
 <connect gate="G$1" pin="LED1" pad="LED1"/>
 <connect gate="G$1" pin="LED2" pad="LED2"/>
@@ -174,13 +174,13 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CHERRY-MX-DIODE">
+<deviceset name="GATERON-DIODE">
 <description>Cherry MX series keyswitch with diode bridge</description>
 <gates>
-<gate name="G$1" symbol="CHERRY-MX-DIODE" x="-2.54" y="0"/>
+<gate name="G$1" symbol="GATERON-DIODE" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="CHERRY-MX-DIODE">
+<device name="" package="GATERON-DIODE">
 <connects>
 <connect gate="G$1" pin="D1" pad="D1"/>
 <connect gate="G$1" pin="D2" pad="D2"/>
